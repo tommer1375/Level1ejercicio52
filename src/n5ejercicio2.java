@@ -7,7 +7,12 @@ public class n5ejercicio2 {
     public static void main(String[] args) {
 
 
-        File directorio = new File("C:\\");
+        Scanner myObj = new Scanner(System.in);
+
+        System.out.println("Introduce la ruta a leer:");
+        String datoString = myObj.nextLine();
+
+        File directorio = new File(datoString);
 
         leerDirectorio.leerCarpetas(directorio);
     }
